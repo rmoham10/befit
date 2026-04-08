@@ -1,4 +1,4 @@
-# QuickSnap - User Management App
+# QuickSign - User Management App
 
 ## Project Overview
 

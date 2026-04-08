@@ -1,15 +1,15 @@
-# BeFit - Airport Gym Access App
+# QuickSnap - User Management App
 
 ## Project Overview
 
-**BeFit** is a smart access platform for airport fitness facilities, enabling travelers to utilize idle layover time for wellness. By integrating card-based authentication and time-based billing, it offers frictionless entry and pay-per-use access. Strategic partnerships with financial institutions allow cardholders to receive exclusive benefits, creating a win-win ecosystem for users, gyms, and partners.
+**QuickSnap** is a User Management & Verification App that allows admins to create, verify, and manage users efficiently. It includes email and phone verification workflows, password hashing, and a simple dashboard for monitoring users.
 
 ### Current Status
 
 - ✅ User signup and login implemented  
-- ✅ Phone number verification via OTP (Twilio)  
-- ✅ JWT-based authentication and protected routes  
-- ⚠️ Card scanning, pay-per-use billing, and financial integrations are planned for future development.
+- ✅ Phone number verification via OTP (Twilio)
+- ✅ Email ID Verification via Email(Mailgun)
+- ✅ JWT-based authentication and protected routes
 
 ---
 
@@ -19,5 +19,6 @@
 - **Backend:** Node.js + Express.js  
 - **Database:** MySQL (using `mysql2` package)  
 - **Authentication:** JWT (JSON Web Tokens)  
-- **OTP / SMS:** Twilio  
+- **OTP / SMS:** Twilio
+- **Email:** Mailgun
 - **HTTP Client:** Axios

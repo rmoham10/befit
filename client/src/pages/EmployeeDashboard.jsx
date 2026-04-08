@@ -35,7 +35,7 @@ export default function EmployeeDashboard() {
       <header className="header">
         <div className="box">
           <div className="logo">
-            <h1>BeFit</h1>
+            <h1>QuickSign</h1>
           </div>
         </div>
       </header>
@@ -102,7 +102,7 @@ export default function EmployeeDashboard() {
           <div style={styles.header}>
             <div>
               <h2 style={styles.title}>Employee Portal</h2>
-              <p style={styles.subtitle}>BeFit Staff Dashboard</p>
+              <p style={styles.subtitle}>QuickSign Staff Dashboard</p>
             </div>
             <button style={styles.signout} onClick={handleSignout}>Sign out</button>
           </div>

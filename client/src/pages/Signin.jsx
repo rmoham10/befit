@@ -14,8 +14,8 @@ export default function Signin() {
     setLoading(true);
     try {
       const res = await api.post('/auth/signin', data);
-      localStorage.setItem('befit_token', res.data.token);
-      localStorage.setItem('befit_user', JSON.stringify(res.data.user));
+      localStorage.setItem('quicksign_token', res.data.token);
+      localStorage.setItem('quicksign_user', JSON.stringify(res.data.user));
       const role = res.data.user?.role;
       if (role === 'Admin') navigate('/admin-dashboard');
       else if (role === 'Employee') navigate('/employee-dashboard');
@@ -92,6 +92,9 @@ export default function Signin() {
           <Link to="/contact">Contact</Link>
 
         </div>
+        <p className="copyright">
+          © {new Date().getFullYear()} QuickSign. All rights reserved.
+        </p>
 
       </footer>
 
@@ -272,6 +275,13 @@ export default function Signin() {
 
         .footer-links a:hover{
         color:rgba(200, 200, 200, 0.7);
+        }
+
+        .copyright{
+          margin-top:10px;
+          margin-bottom: 5px;
+          font-size:13px;
+          color:rgba(255,255,255,0.6);
         }
       `}</style>
     </>

@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**QuickSnap** is a User Management & Verification App that allows admins to create, verify, and manage users efficiently. It includes email and phone verification workflows, password hashing, and a simple dashboard for monitoring users.
+**QuickSign** is a User Management & Verification App that allows admins to create, verify, and manage users efficiently. It includes email and phone verification workflows, password hashing, and a simple dashboard for monitoring users.
 
 ### Current Status
 

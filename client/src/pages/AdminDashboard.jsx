@@ -86,7 +86,7 @@ export default function AdminDashboard() {
         {/* Sidebar */}
         <aside style={S.sidebar}>
           <div style={S.sidebarHeader}>
-            <div style={S.logo}>BeFit</div>
+            <div style={S.logo}>QuickSign</div>
             <div style={S.adminBadge}>ADMIN</div>
           </div>
           <nav style={S.nav}>
@@ -182,7 +182,7 @@ export default function AdminDashboard() {
                         onChange={e => setForm(f => ({ ...f, full_name: e.target.value }))} />
                     </FormField>
                     <FormField label="Email">
-                      <input style={S.input} type="email" placeholder="jane@befit.com"
+                      <input style={S.input} type="email" placeholder="jane@bquicksign.com"
                         value={form.email}
                         onChange={e => setForm(f => ({ ...f, email: e.target.value }))} />
                     </FormField>

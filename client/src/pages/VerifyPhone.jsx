@@ -63,8 +63,8 @@ export default function VerifyPhone() {
     try {
       const { data } = await api.post('/auth/verify-otp', { phone, otp });
       setStepStatus(prev => ({ ...prev, phone: 'done' }));
-      localStorage.setItem('befit_token', data.token);
-      localStorage.setItem('befit_user', JSON.stringify(data.user));
+      localStorage.setItem('quicksign_token', data.token);
+      localStorage.setItem('quicksign_user', JSON.stringify(data.user));
 
       // Redirect based on role
       setTimeout(() => {
@@ -202,6 +202,9 @@ export default function VerifyPhone() {
         <h3>QuickSign</h3>
         <p>Fast • Secure • Modern User Management</p>
       </footer>
+      <p className="copyright">
+          © {new Date().getFullYear()} QuickSign. All rights reserved.
+      </p>
 
       {/* ================= CSS ================= */}
       <style>{`
@@ -252,6 +255,13 @@ export default function VerifyPhone() {
 
         .link:hover {
           color: #ff006e;
+        }
+        
+        .copyright{
+          margin-top:10px;
+          margin-bottom: 5px;
+          font-size:13px;
+          color:rgba(255,255,255,0.6);
         }
 
         .link{color:#7c3aed;cursor:pointer;font-weight:700;}

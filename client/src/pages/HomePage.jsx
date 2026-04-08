@@ -182,6 +182,9 @@ export default function HomePage() {
           <Link to="/contact">Contact</Link>
 
         </div>
+        <p className="copyright">
+          © {new Date().getFullYear()} QuickSign. All rights reserved.
+        </p>
 
       </footer>
 
@@ -405,6 +408,13 @@ text-decoration:none;
 }
 .footer-links a:hover{
 color:rgba(200, 200, 200, 0.7);
+}
+
+.copyright{
+  margin-top:10px;
+  margin-bottom: 5px;
+  font-size:13px;
+  color:rgba(255,255,255,0.6);
 }
 
 `}</style>

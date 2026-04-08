@@ -8,14 +8,19 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+server/node_modules
+client/node_modules
+server/utils/passwordHasher
 dist
 dist-ssr
 *.local
+.DS_Store
 
 # Environment variables
 .env
 server/.env
 client/.env
+passwordHasher.js
 
 # Editor directories and files
 .vscode/*
